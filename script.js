@@ -1,4 +1,90 @@
+/* =====================================================
+   VILLA KUNTERBUNT — Main Script
+   ===================================================== */
+
+// ── HEADER SCROLL STATE ──
+const header = document.getElementById('site-header');
+const onScroll = () => {
+  if (header) header.classList.toggle('scrolled', window.scrollY > 20);
+  updateParallax();
+};
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// ── MOBILE NAV ──
 const navToggle = document.querySelector('.nav-toggle');
+const navMenu   = document.getElementById('nav-menu');
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    navToggle.classList.toggle('open', open);
+  });
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.classList.remove('open');
+    });
+  });
+}
+
+// ── ACTIVE NAV LINK ──
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-menu a').forEach(a => {
+  if (a.getAttribute('href') === currentPage) a.classList.add('active');
+});
+
+// ── PARALLAX ──
+const parallaxItems = document.querySelectorAll('[data-parallax]');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function updateParallax() {
+  if (reducedMotion || !parallaxItems.length) return;
+  const sy = window.scrollY;
+  parallaxItems.forEach(el => {
+    const speed = parseFloat(el.dataset.parallax);
+    el.style.transform = `translateY(${sy * speed}px)`;
+  });
+}
+
+// ── REVEAL ON SCROLL ──
+const reveals = document.querySelectorAll('.reveal');
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(el => ro.observe(el));
+
+// ── FAQ ACCORDION ──
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const body = item.querySelector('.faq-body');
+    const isOpen = item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+    body.style.maxHeight = isOpen ? body.scrollHeight + 'px' : '0';
+  });
+});
+
+// ── FORMS ──
+function setupForm(id, successMsg) {
+  const form = document.getElementById(id);
+  if (!form) return;
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const msg = form.querySelector('.form-message');
+    if (!form.checkValidity()) {
+      if (msg) { msg.textContent = 'Bitte alle Pflichtfelder ausfüllen.'; msg.className = 'form-message err'; }
+      return;
+    }
+    if (msg) { msg.textContent = successMsg; msg.className = 'form-message ok'; }
+    form.reset();
+  });
+}
+setupForm('form-kontakt', '✅ Vielen Dank! Ihre Nachricht wurde gespeichert.');
+setupForm('form-anfrage', '✅ Vielen Dank! Ihre Anfrage wurde gespeichert.');
+
 const navList = document.querySelector('#nav-list');
 
 if (navToggle && navList) {

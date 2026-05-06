@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt & Platzanfrage | Villa Kunterbunt Mühlheim</title>
+  <meta name="description" content="Kontaktieren Sie Petra Orzechowski von der Villa Kunterbunt Mühlheim – per Formular, Telefon oder E-Mail. Platz anfragen für die Kindertagespflege." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html" aria-label="Villa Kunterbunt Startseite">
+        <div class="logo-mark" aria-hidden="true">VK</div>
+        <div class="logo-text"><strong>Villa Kunterbunt</strong><small>Mühlheim am Main</small></div>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Menü öffnen" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="eingewohnung.html">Alltag & Eingewöhnung</a></li>
+        <li><a href="kontakt.html" class="nav-cta">Platz anfragen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="page-hero" style="background:linear-gradient(135deg,#FFF0EE 0%,#FFF9E6 50%,#F6EEFF 100%);">
+      <div class="hero-deco" aria-hidden="true">
+        <div class="blob" data-parallax="-0.11" style="width:380px;height:380px;background:radial-gradient(circle,rgba(255,107,107,.22),transparent 65%);right:-60px;top:-40px;"></div>
+        <div class="blob" data-parallax="-0.15" style="width:250px;height:250px;background:radial-gradient(circle,rgba(255,217,61,.28),transparent 65%);left:-40px;bottom:0;"></div>
+        <span class="deco-item" data-parallax="-0.07" style="right:8%;top:25%;font-size:2.5rem;">💌</span>
+        <span class="deco-item" data-parallax="-0.12" style="left:6%;top:20%;font-size:2rem;">💛</span>
+        <span class="deco-item" data-parallax="-0.09" style="right:28%;bottom:22%;font-size:1.8rem;">🌸</span>
+      </div>
+      <div class="container page-hero-content reveal">
+        <p class="kicker">Wir freuen uns auf Sie</p>
+        <h1>Schreiben Sie uns! 💌</h1>
+        <p class="lead">Haben Sie Fragen oder möchten Sie einen Platz anfragen? Ich freue mich auf Ihre Nachricht und melde mich zeitnah zurück – am liebsten beim persönlichen Kennenlerngespräch!</p>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT + FORM ═══ -->
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <p class="kicker">Direktkontakt</p>
+          <h2>So erreichen Sie mich</h2>
+          <div class="contact-info-list" style="margin-top:1.2rem;">
+            <div class="contact-info-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <div class="ci-label">Standort</div>
+                <div class="ci-value">Mühlheim am Main</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon">📧</span>
+              <div>
+                <div class="ci-label">E-Mail</div>
+                <div class="ci-value">kontakt@villa-kunterbunt-muehlheim.de</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon">📞</span>
+              <div>
+                <div class="ci-label">Telefon</div>
+                <div class="ci-value">Bitte per E-Mail anfragen</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon">🕐</span>
+              <div>
+                <div class="ci-label">Öffnungszeiten</div>
+                <div class="ci-value">Mo – Do 8:00 – 15:45 Uhr · Fr 8:00 – 14:30 Uhr</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-block" style="margin-top:1.8rem;">
+            <blockquote>
+              „Nichts übertrifft ein persönliches Gespräch. Ich freue mich, Sie und Ihr Kind kennenzulernen!"
+            </blockquote>
+            <cite>– Petra Orzechowski</cite>
+          </div>
+        </div>
+
+        <div class="form-card reveal d1">
+          <h3 style="margin-bottom:1.2rem;">Kontaktformular ✉️</h3>
+          <form id="form-kontakt" novalidate>
+            <div class="form-group">
+              <label for="k-name">Ihr Name *</label>
+              <input id="k-name" name="name" type="text" required placeholder="Max Mustermann" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="k-email">E-Mail-Adresse *</label>
+              <input id="k-email" name="email" type="email" required placeholder="max@beispiel.de" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="k-betreff">Betreff</label>
+              <input id="k-betreff" name="betreff" type="text" placeholder="z. B. Frage zur Betreuung" />
+            </div>
+            <div class="form-group">
+              <label for="k-nachricht">Nachricht *</label>
+              <textarea id="k-nachricht" name="nachricht" rows="4" required placeholder="Ihre Nachricht…"></textarea>
+            </div>
+            <button class="btn btn-primary form-submit" type="submit" style="width:100%;">Nachricht senden 🚀</button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WAVE + ANFRAGE ═══ -->
+    <div class="wave" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#EEFDF1"/>
+      </svg>
+    </div>
+    <section class="section bg-mint" id="anfrage">
+      <div class="container split rev">
+        <div class="reveal">
+          <p class="kicker">Betreuungsplatz anfragen</p>
+          <h2>Interesse an einem Platz? 🎉</h2>
+          <p>Füllen Sie das Formular aus und ich melde mich zeitnah mit einem Termin für ein unverbindliches Kennenlerngespräch zurück.</p>
+          <ul style="display:grid;gap:.7rem;margin-top:1rem;font-weight:700;">
+            <li style="display:flex;gap:.6rem;align-items:flex-start;"><span>✅</span><span>Persönliches Kennenlernen ohne Druck</span></li>
+            <li style="display:flex;gap:.6rem;align-items:flex-start;"><span>✅</span><span>Alle Fragen in Ruhe besprechen</span></li>
+            <li style="display:flex;gap:.6rem;align-items:flex-start;"><span>✅</span><span>Räume und Atmosphäre erleben</span></li>
+            <li style="display:flex;gap:.6rem;align-items:flex-start;"><span>✅</span><span>Kein Unterschreiben beim ersten Termin</span></li>
+          </ul>
+          <a href="downloads/paedagogisches-konzept.txt" class="btn btn-ghost" style="margin-top:1.5rem;display:inline-flex;">📄 Konzept herunterladen</a>
+        </div>
+
+        <div class="form-card reveal d1">
+          <h3 style="margin-bottom:1.2rem;">Platzanfrage 👶</h3>
+          <form id="form-anfrage" novalidate>
+            <div class="form-group">
+              <label for="a-eltern">Name der Eltern *</label>
+              <input id="a-eltern" name="eltern" type="text" required placeholder="Familie Mustermann" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="a-email">E-Mail-Adresse *</label>
+              <input id="a-email" name="email" type="email" required placeholder="max@beispiel.de" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="a-kind">Name und Alter des Kindes *</label>
+              <input id="a-kind" name="kind" type="text" required placeholder="z. B. Lena, 14 Monate" />
+            </div>
+            <div class="form-group">
+              <label for="a-start">Gewünschter Betreuungsbeginn *</label>
+              <input id="a-start" name="start" type="month" required />
+            </div>
+            <div class="form-group">
+              <label for="a-details">Besonderheiten / Anmerkungen</label>
+              <textarea id="a-details" name="details" rows="3" placeholder="Allergien, besondere Bedürfnisse, Fragen…"></textarea>
+            </div>
+            <button class="btn btn-primary form-submit" type="submit" style="width:100%;background:var(--mint);color:var(--text);box-shadow:0 6px 22px rgba(107,203,119,.4);">Anfrage senden 🌱</button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="wave" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,0 1080,60 1440,30 L1440,0 L0,0 Z" fill="#EEFDF1"/>
+      </svg>
+    </div>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Häufige Fragen</p>
+          <h2>Was Eltern uns fragen 💬</h2>
+        </div>
+        <div class="faq-list" style="max-width:780px;margin-inline:auto;">
+          <div class="faq-item reveal">
+            <button class="faq-btn" aria-expanded="false">Ab welchem Alter nehmen Sie Kinder auf?</button>
+            <div class="faq-body"><div class="faq-body-inner"><p>In der Regel betreue ich Kinder im U3-Bereich. Das genaue Alter und die konkreten Möglichkeiten besprechen wir beim persönlichen Kennenlerngespräch.</p></div></div>
+          </div>
+          <div class="faq-item reveal d1">
+            <button class="faq-btn" aria-expanded="false">Wie lange dauert die Eingewöhnung?</button>
+            <div class="faq-body"><div class="faq-body-inner"><p>Die Eingewöhnung orientiert sich am Kind – in der Regel dauert sie nicht länger als 4 Wochen. Wir gehen schrittweise nach dem Berliner Modell vor, sodass Ihr Kind in seinem eigenen Tempo ankommen kann.</p></div></div>
+          </div>
+          <div class="faq-item reveal d2">
+            <button class="faq-btn" aria-expanded="false">Gibt es einen festen Betreuungsvertrag?</button>
+            <div class="faq-body"><div class="faq-body-inner"><p>Ja, es gibt einen schriftlichen Betreuungsvertrag. Beim Kennenlerngespräch erkläre ich alle Details in Ruhe. Das Jugendamt ist als Aufsichtsbehörde eingebunden.</p></div></div>
+          </div>
+          <div class="faq-item reveal d3">
+            <button class="faq-btn" aria-expanded="false">Kann ich die Betreuungskosten fördern lassen?</button>
+            <div class="faq-body"><div class="faq-body-inner"><p>Ja! Es besteht die Möglichkeit, die Kosten beim Kreis Offenbach zu beantragen. Ich helfe Ihnen dabei, die nötigen Informationen zu sammeln.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-btn" aria-expanded="false">Was muss ich zum ersten Treffen mitbringen?</button>
+            <div class="faq-body"><div class="faq-body-inner"><p>Nichts Besonderes – kommen Sie einfach entspannt vorbei! Es ist ein erstes Kennenlernen ohne Verpflichtungen. Fragen sind ausdrücklich willkommen.</p></div></div>
+          </div>
+          <div class="faq-item reveal d1">
+            <button class="faq-btn" aria-expanded="false">Gibt es Gruppenausflüge und wohin?</button>
+            <div class="faq-body"><div class="faq-body-inner"><p>Wir gehen regelmäßig auf Spielplätze, in Parks, in den Waldzoo, die Alte Fasanerie und im Winter in die Kidsity. Treffen mit anderen Tagespflegegruppen gehören auch dazu. Ganztagsausflüge nur nach vorheriger Absprache.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-mark" aria-hidden="true">VK</div>
+            <div class="logo-text"><strong style="color:#fff;">Villa Kunterbunt</strong><small>Mühlheim am Main</small></div>
+          </div>
+          <p>Liebevolle Kindertagespflege in familiärer Atmosphäre. Bundeszertifiziert. Seit 2007 für Familien aus Mühlheim am Main.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Seiten</h4>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="ueber-mich.html">Über mich & Konzept</a></li>
+            <li><a href="eingewohnung.html">Alltag & Eingewöhnung</a></li>
+            <li><a href="kontakt.html">Kontakt & Anfrage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+          <h4 style="margin-top:1.2rem;">Öffnungszeiten</h4>
+          <ul>
+            <li><a href="eingewohnung.html">Mo – Do: 8:00 – 15:45 Uhr</a></li>
+            <li><a href="eingewohnung.html">Freitag: 8:00 – 14:30 Uhr</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Petra Orzechowski · Villa Kunterbunt Mühlheim · Alle Rechte vorbehalten</span>
+        <span>Made with ❤️ für Mühlheim am Main</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
