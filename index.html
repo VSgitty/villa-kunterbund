@@ -44,40 +44,113 @@
     <!-- ═══ HERO ═══ -->
     <section class="hero">
       <div class="hero-deco" aria-hidden="true">
-        <div class="blob" data-parallax="-0.14" style="width:480px;height:480px;background:radial-gradient(circle,rgba(255,217,61,.38),transparent 65%);right:-100px;top:-80px;"></div>
-        <div class="blob" data-parallax="-0.22" style="width:360px;height:360px;background:radial-gradient(circle,rgba(77,150,255,.28),transparent 65%);left:-70px;bottom:0;"></div>
-        <div class="blob" data-parallax="-0.09" style="width:200px;height:200px;background:radial-gradient(circle,rgba(107,203,119,.32),transparent 65%);left:52%;top:38%;"></div>
-        <div class="blob" data-parallax="-0.18" style="width:160px;height:160px;background:radial-gradient(circle,rgba(199,125,255,.38),transparent 65%);right:22%;top:14%;"></div>
-        <span class="deco-item" data-parallax="-0.07" style="right:7%;top:18%;font-size:2.8rem;">⭐</span>
-        <span class="deco-item" data-parallax="-0.13" style="right:28%;top:8%;font-size:1.6rem;">✨</span>
-        <span class="deco-item" data-parallax="-0.17" style="left:4%;bottom:32%;font-size:2.2rem;">🌸</span>
-        <span class="deco-item" data-parallax="-0.06" style="left:18%;top:14%;font-size:1.9rem;">🌿</span>
-        <span class="deco-item" data-parallax="-0.11" style="right:14%;bottom:22%;font-size:2rem;">💛</span>
-        <span class="deco-item" data-parallax="-0.15" style="left:38%;bottom:18%;font-size:1.5rem;">🦋</span>
+        <div class="blob" data-parallax="-0.1" style="width:520px;height:520px;background:radial-gradient(circle,rgba(255,217,61,.32),transparent 65%);right:-120px;top:-120px;"></div>
+        <div class="blob" data-parallax="-0.14" style="width:440px;height:440px;background:radial-gradient(circle,rgba(77,150,255,.24),transparent 65%);left:-110px;top:120px;"></div>
+        <div class="blob" data-parallax="-0.08" style="width:280px;height:280px;background:radial-gradient(circle,rgba(107,203,119,.22),transparent 65%);left:48%;top:18%;"></div>
+        <div class="blob" data-parallax="-0.12" style="width:210px;height:210px;background:radial-gradient(circle,rgba(199,125,255,.24),transparent 65%);right:18%;bottom:12%;"></div>
+        <span class="deco-item" data-parallax="-0.07" style="left:10%;top:22%;font-size:1.8rem;">🌿</span>
+        <span class="deco-item" data-parallax="-0.09" style="right:11%;bottom:20%;font-size:1.9rem;">✨</span>
       </div>
       <div class="container">
-        <div class="hero-content reveal">
-          <p class="kicker">Kindertagespflege in Mühlheim am Main</p>
-          <h1>Ein Ort, an dem<br>kleine Herzen <em>aufblühen</em>.</h1>
-          <p class="lead">In der Villa Kunterbunt begleite ich Ihr Kind liebevoll, individuell und mit viel Erfahrung durch die aufregendsten Jahre des Lebens – in einer kleinen, familiären Gruppe mit viel Zeit für jedes Kind.</p>
-          <div class="hero-cta">
-            <a href="kontakt.html" class="btn btn-primary">✨ Platz anfragen</a>
-            <a href="ueber-mich.html" class="btn btn-ghost">Mehr über mich</a>
+        <div class="hero-shell">
+          <div class="hero-content reveal">
+            <p class="kicker hero-kicker">Kindertagespflege in Mühlheim am Main</p>
+            <figure class="hero-illustration reveal d1" aria-label="Villa Kunterbunt Wortmarke mit Haus und Sonne">
+              <div class="hero-illustration-frame">
+                <svg class="hero-illustration-svg" viewBox="0 0 1400 380" role="img" aria-labelledby="hero-illus-title hero-illus-desc">
+                  <title id="hero-illus-title">Villa Kunterbunt</title>
+                  <desc id="hero-illus-desc">Handgezeichneter Villa-Kunterbunt-Schriftzug mit Hausillustration links und Sonne rechts.</desc>
+                  <defs>
+                    <linearGradient id="paperShade" x1="0%" x2="100%" y1="0%" y2="100%">
+                      <stop offset="0%" stop-color="#fffef9" />
+                      <stop offset="100%" stop-color="#fff8ec" />
+                    </linearGradient>
+                    <linearGradient id="skyBand" x1="0%" x2="100%" y1="0%" y2="0%">
+                      <stop offset="0%" stop-color="#dff2ff" />
+                      <stop offset="100%" stop-color="#c7e8ff" />
+                    </linearGradient>
+                    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="140%">
+                      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#d9c59a" flood-opacity="0.25" />
+                    </filter>
+                  </defs>
+                  <path d="M35 42C35 18 56 0 82 0H1318C1345 0 1366 21 1366 47V212C1366 263 1327 306 1276 309L139 360C82 368 35 333 35 277Z" fill="url(#paperShade)" filter="url(#softShadow)"/>
+                  <path d="M0 292C134 286 331 312 529 300C754 287 969 245 1210 262C1284 267 1346 282 1400 314V380H0Z" fill="url(#skyBand)" opacity="0.95"/>
+                  <g opacity="0.8">
+                    <path d="M42 332C60 337 76 344 88 353" stroke="#91c76d" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M96 330C102 339 106 346 110 356" stroke="#9ecf74" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M145 330C152 340 158 348 162 357" stroke="#8ac35f" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M1018 322C1026 332 1032 341 1035 353" stroke="#8ac35f" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M1068 326C1079 334 1086 344 1090 354" stroke="#91c76d" stroke-width="5" stroke-linecap="round"/>
+                  </g>
+                  <g transform="translate(88 40) rotate(-4 90 130)">
+                    <path d="M34 108L120 22L190 96" fill="none" stroke="#4d8fd7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M58 108L76 286L178 286L160 104Z" fill="#f6fbff" stroke="#4d8fd7" stroke-width="10" stroke-linejoin="round"/>
+                    <path d="M118 24L144 10L166 98" fill="#e35f5f" stroke="#c94f4f" stroke-width="8" stroke-linejoin="round"/>
+                    <path d="M148 18C168 0 182 3 194 28" fill="none" stroke="#d7e6f7" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 12"/>
+                    <rect x="80" y="138" width="26" height="34" rx="4" fill="#fff8f8" stroke="#e35f5f" stroke-width="7"/>
+                    <rect x="120" y="138" width="26" height="34" rx="4" fill="#fff8f8" stroke="#e35f5f" stroke-width="7"/>
+                    <path d="M113 210C113 188 128 172 147 172C166 172 180 188 180 210V286H113Z" fill="#ef7269" stroke="#d45b52" stroke-width="8"/>
+                  </g>
+                  <g aria-hidden="true">
+                    <text x="332" y="168" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-2 332 168)">V</text>
+                    <text x="396" y="178" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(2 396 178)">i</text>
+                    <text x="428" y="171" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-1 428 171)">l</text>
+                    <text x="457" y="178" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(1 457 178)">l</text>
+                    <text x="490" y="171" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-3 490 171)">a</text>
+
+                    <text x="600" y="174" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(2 600 174)">K</text>
+                    <text x="680" y="171" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-2 680 171)">u</text>
+                    <text x="754" y="179" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(1 754 179)">n</text>
+                    <text x="827" y="170" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-1 827 170)">t</text>
+                    <text x="890" y="176" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(2 890 176)">e</text>
+                    <text x="962" y="169" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-2 962 169)">r</text>
+
+                    <text x="1026" y="177" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(1 1026 177)">b</text>
+                    <text x="1098" y="170" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-1 1098 170)">u</text>
+                    <text x="1168" y="177" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #d95959; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(2 1168 177)">n</text>
+                    <text x="1240" y="170" style="font: 800 112px 'Baloo 2', 'Nunito', sans-serif; fill: #4a7fd4; stroke: rgba(255,255,255,.55); stroke-width: 7px; paint-order: stroke fill;" transform="rotate(-2 1240 170)">t</text>
+                  </g>
+                  <g transform="translate(1242 18)">
+                    <circle cx="72" cy="56" r="34" fill="#ffe44d"/>
+                    <g stroke="#f6c04a" stroke-width="8" stroke-linecap="round">
+                      <path d="M72 0L72 18"/>
+                      <path d="M72 94L72 112"/>
+                      <path d="M16 56L34 56"/>
+                      <path d="M110 56L128 56"/>
+                      <path d="M29 15L42 29"/>
+                      <path d="M102 84L114 96"/>
+                      <path d="M28 96L42 84"/>
+                      <path d="M102 28L116 14"/>
+                      <path d="M54 6L60 21"/>
+                      <path d="M90 92L96 106"/>
+                      <path d="M20 36L34 42"/>
+                      <path d="M112 70L126 76"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </figure>
+            <h1>Ein Ort, an dem kleine Herzen <em>aufblühen</em>.</h1>
+            <p class="lead">In der Villa Kunterbunt begleite ich Ihr Kind liebevoll, individuell und mit viel Erfahrung durch die aufregendsten Jahre des Lebens – in einer kleinen, familiären Gruppe mit viel Zeit für jedes Kind.</p>
+            <div class="hero-cta">
+              <a href="kontakt.html" class="btn btn-primary">✨ Platz anfragen</a>
+              <a href="ueber-mich.html" class="btn btn-ghost">Mehr über mich</a>
+            </div>
+            <ul class="hero-badges">
+              <li>🏆 2× Bundeszertifiziert</li>
+              <li>🌿 Naturpädagogik</li>
+              <li>👶 Seit 2007</li>
+              <li>🏠 Mühlheim am Main</li>
+            </ul>
           </div>
-          <ul class="hero-badges">
-            <li>🏆 2× Bundeszertifiziert</li>
-            <li>🌿 Naturpädagogik</li>
-            <li>👶 Seit 2007</li>
-            <li>🏠 Mühlheim am Main</li>
-          </ul>
         </div>
       </div>
     </section>
 
     <!-- ═══ WAVE + STATS ═══ -->
     <div class="wave" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none">
-        <path d="M0,35 C280,70 580,0 860,40 C1100,70 1280,10 1440,35 L1440,70 L0,70 Z" fill="#FFCA1A"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 44" preserveAspectRatio="none">
+        <path d="M0,22 C280,44 580,0 860,26 C1100,44 1280,6 1440,22 L1440,44 L0,44 Z" fill="#FFCA1A"/>
       </svg>
     </div>
     <div class="stats-strip">
@@ -107,8 +180,8 @@
       </div>
     </div>
     <div class="wave" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none">
-        <path d="M0,35 C280,0 580,70 860,30 C1100,0 1280,60 1440,35 L1440,0 L0,0 Z" fill="#FFCA1A"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 44" preserveAspectRatio="none">
+        <path d="M0,22 C280,0 580,44 860,18 C1100,0 1280,38 1440,22 L1440,0 L0,0 Z" fill="#FFCA1A"/>
       </svg>
     </div>
 
@@ -156,8 +229,8 @@
 
     <!-- ═══ WAVE + TEASER PAGES ═══ -->
     <div class="wave" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
-        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#FFF9E6"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,20 C360,40 1080,0 1440,20 L1440,40 L0,40 Z" fill="#FFF9E6"/>
       </svg>
     </div>
     <section class="section bg-yellow">
@@ -199,8 +272,8 @@
       </div>
     </section>
     <div class="wave" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
-        <path d="M0,30 C360,0 1080,60 1440,30 L1440,0 L0,0 Z" fill="#FFF9E6"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,20 C360,0 1080,40 1440,20 L1440,0 L0,0 Z" fill="#FFF9E6"/>
       </svg>
     </div>
 
