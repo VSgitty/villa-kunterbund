@@ -2,6 +2,9 @@
    VILLA KUNTERBUNT — Main Script
    ===================================================== */
 
+// Enable CSS-based reveal hiding only when JS is active
+document.documentElement.classList.add('js-ready');
+
 // ── HEADER SCROLL STATE ──
 const header = document.getElementById('site-header');
 const onScroll = () => {
@@ -49,12 +52,26 @@ function updateParallax() {
 
 // ── REVEAL ON SCROLL ──
 const reveals = document.querySelectorAll('.reveal');
+
+// Layer 1: immediately show anything already in the viewport on load
+function inViewport(el) {
+  const r = el.getBoundingClientRect();
+  return r.top < window.innerHeight && r.bottom > 0;
+}
+reveals.forEach(el => { if (inViewport(el)) el.classList.add('visible'); });
+
+// Layer 2: IntersectionObserver for elements below the fold
 const ro = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
   });
-}, { threshold: 0.12 });
-reveals.forEach(el => ro.observe(el));
+}, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => { if (!el.classList.contains('visible')) ro.observe(el); });
+
+// Layer 3: hard fallback — ensure nothing stays hidden after 800ms
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+}, 800);
 
 // ── FAQ ACCORDION ──
 document.querySelectorAll('.faq-btn').forEach(btn => {
